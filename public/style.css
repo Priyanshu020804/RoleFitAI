@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-image: url("Axis.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    top: 0;
+    left: 0;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    margin-top: 20px;
+}
+
+.container h1{
+    text-align: center;
+    float: inline-start;
+    font-size: 3.5rem;
+    text-decoration: underline;
+}
+
+form {
+    max-width: 600px;
+    margin: 150px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    opacity: 0.7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    font-weight: bold;
+}
+
+#butt {
+    margin-top: 100px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    background-color:  #a0d187;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#butt:hover { 
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#submit{
+    margin-top: 2px;
+    padding: 5px;
+    text-decoration: solid;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#submit:hover{
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.container #tableContainer{
+    background-color: whitesmoke;
+    opacity: 0.7;
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+#sendEmailBtn {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-style: italic;
+    text-decoration: solid;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.container #job-d {
+    align-items:center;
+}
+
+.container #jobDescriptionForm p{
+   font-size: 25px;
+   margin: auto;
+   font-weight: bold;
+   text-decoration: underline;
+   background-color: whitesmoke;
+}
+
+.container #jobd{
+    font-size: 15px;
+    margin: auto;
+    font-weight: bold;
+}
+
+#jobd-submit{
+    margin-top: 2px;
+    padding: 5px;
+    text-decoration: solid;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container #jobd-submit:hover { 
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#jobDescriptionForm{
+    max-width: 600px;
+    margin: 150px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: rgba(245, 245, 245, 0.7);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    font-weight: bold;
+}
+
+#pdfContainer{
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    font-size: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-container-jobd{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#new-a{
+    margin-top: 2px;
+}
+
+#jobdbutt{
+    margin-top: 2px;
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: solid;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity :1 ;
+}
+
+#jobdbutt:hover{
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#jobd-restore{
+    margin-top: 2px;
+    font-size: 15px;
+    font-style: italic;
+    text-decoration: solid;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity :1 ;
+}
+
+#jobd-restore:hover{
+    transform: translate3d(0, -2px, 0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#scoreContainer {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    color: white; 
+}
+
+#scoreText {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#scoreValue {
+    font-size: 24px;
+    color: #007bff;
+}
+
+
+a{
+    color: #007bff; 
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+  
+a:visited {
+    color: #007bff;
+}
+
+.dotted-loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#loader{
+    height:80px;
+    width:80px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin:auto;
+}
+[l]{
+  position:absolute;
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  animation:loader 2s linear infinite;
+}
+[a]{left:35px;}
+[b]{right:10px;top:10px;animation-delay:.2s}
+[c]{top:35px;right:0;animation-delay:.4s}
+[d]{right:10px;bottom:10px;animation-delay:.6s}
+[e]{left:35px;bottom:0;animation-delay:.8s}
+[f]{left:10px;bottom:10px;animation-delay:1s}
+[g]{top:35px;left:0;animation-delay:1.2s}
+[h]{left:10px;top:10px;animation-delay:1.4s}
+@keyframes loader{
+  0%{
+    background: black;
+  }
+  100%{
+      background:white ;
+  }
+}

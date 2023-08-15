@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hr Information</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Upload Job Description</h1>
+        
+        <form id="jobDescriptionForm" enctype="multipart/form-data">
+
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" name="jobTitle" required><br><br>
+
+            <label for="jobd">Job Description:</label>
+            <input type="file" id="jobd" name="jobd" accept=".pdf,.doc,.docx" required>
+
+            <br><br>
+
+            <button id="jobd-submit" type="submit">Submit Job Description</button>
+            
+        </form>
+        
+        <div id="scoreContainer" style="display: none;">
+            <p id="scoreText">Score: <span id="scoreValue"></span></p>
+        </div>
+
+        <div id="pdfContainer" style="display: none;">
+            <embed id="pdfViewer" src="/job_description_final/jd.pdf" width="100%" height="500px" type="application/pdf">
+            <div class="button-container-jobd">
+                <a id="downloadLink" href="/job_description_final/jd.pdf" download>
+                    <button id="jobdbutt">Download Job Description</button>
+                </a>
+                <button id="jobd-restore" type="button">Restore Original Job Description</button>
+            </div>
+        </div>
+
+        <div id="loader" style="display: none;">
+            <div l a></div>
+            <div l b></div>
+            <div l c></div>
+            <div l d></div>
+            <div l e></div>
+            <div l f></div>
+            <div l g></div>
+            <div l h></div>
+        </div>
+        
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

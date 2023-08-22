@@ -14,8 +14,8 @@ pdf = FPDF()
 pdf.add_page()
 pdf.set_font("Arial", size = 15)
 # gpt = GPT4All("E:\ML projects and competitons_\jd-resume-matcher\orca-mini-3b.ggmlv3.q4_0.bin")
-pytesseract.pytesseract.tesseract_cmd = r"D:\\web dev\\Axis\\jdResume\\tesseract-ocr\\tesseract.exe"
-st_model_dir = "D:\\web dev\\Axis\\jdResume\\all-mpnet-base-v2"
+pytesseract.pytesseract.tesseract_cmd = r"path-to-dir-RoleFitAI\\jdResume\\tesseract-ocr\\tesseract.exe"
+st_model_dir = "path-to-dir-RoleFitAI\\jdResume\\all-mpnet-base-v2"
 model = SentenceTransformer(st_model_dir)
 
 def pdf_classifier(inpath):

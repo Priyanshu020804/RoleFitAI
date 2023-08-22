@@ -1,5 +1,7 @@
 # RoleFitAI - **job portal and HRMS powered by LLMs**
 
+Watch the video demo [here](https://drive.google.com/file/d/1I3ncywaBV-t-9KK8s1d68iKFjITG2l02/view?usp=sharing)
+
 Follow these instructions in order to locally launch the website using VSCode:
 
 1. Clone this repository using the git clone command
@@ -18,6 +20,7 @@ An overview of the project's directory structure:
   - `uploads`: will contain all the uploaded resumes
   - `README.md`: Getting started guide.
   - `How To Setup MySQL.docx`: instructions for setting up MySQL in VSCode
+  - `RoleFitAI_presentation.pptx`: a presentation on the project
 
 3. Install the required Node.js libraries using the following command:
 

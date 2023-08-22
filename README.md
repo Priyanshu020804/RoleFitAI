@@ -57,5 +57,9 @@ jd="path-to-dir-RoleFitAI\\job_description_final\\jd.pdf"
 pytesseract.pytesseract.tesseract_cmd = r"path-to-dir-RoleFitAI\\jdResume\\tesseract-ocr\\tesseract.exe"
 st_model_dir = "path-to-dir-RoleFitAI\\jdResume\\all-mpnet-base-v2"
 ```
+  If you wish to utilize it, uncomment the GPT-4-All code in jtjd.py.
+  
+9. To open the homepage in your local browser at `http://localhost:5500/`, execute the following command in the VSCode terminal:
 
-Uncomment the gpt4all code in jtjd.py if you want to use it 
+```bash
+node server.js

@@ -9,12 +9,12 @@ import pypdfium2 as pdfium
 import pathlib
 import docxpy
 
-extractor_model_dir = "D:\\web dev\\Axis\\jdResume\\keyphrase-extraction-kbir-inspec"
-st_model_dir = "D:\\web dev\\Axis\\jdResume\\bert-base-nli-mean-tokens"
-pytesseract.pytesseract.tesseract_cmd = r"D:\\web dev\\Axis\\jdResume\\tesseract-ocr\\tesseract.exe"
+extractor_model_dir = "path-to-dir-RoleFitAI\\jdResume\\keyphrase-extraction-kbir-inspec"
+st_model_dir = "path-to-dir-RoleFitAI\\jdResume\\bert-base-nli-mean-tokens"
+pytesseract.pytesseract.tesseract_cmd = r"path-to-dir-RoleFitAI\\jdResume\\tesseract-ocr\\tesseract.exe"
 extractor = pipeline("token-classification", model=extractor_model_dir, tokenizer=extractor_model_dir)
 model = SentenceTransformer(st_model_dir)
-jd="D:\\web dev\\Axis\\job_description_final\\jd.pdf"
+jd="path-to-dir-RoleFitAI\\job_description_final\\jd.pdf"
 
 def pdf_classifier(inpath):
   extracted_text = ""

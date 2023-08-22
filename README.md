@@ -2,19 +2,23 @@
 
 **JOB PORTAL AND HRMS POWERED BY LLM**
 
-Before running the code, create the following empty folders in the project directory:
+Follow these instructions in order to locally launch the website using VSCode:
+
+1. Clone this repository using the git clone command
+
+2. Before running the code, create the following empty folders in the project directory-
 
 - job_description_final
 - job_description_upload
 - uploads
 
-Install the required Node.js libraries using the following command:
+3. Install the required Node.js libraries using the following command:
 
 ```bash
 npm install express body-parser mysql2 path multer nodemailer
 ```
 
-Install Python Libraries:
+4. Install Python Libraries:
 ```
 git clone https://huggingface.co/ml6team/keyphrase-extraction-kbir-inspec
 git clone https://huggingface.co/sentence-transformers/bert-base-nli-mean-tokens
@@ -22,15 +26,21 @@ git clone https://huggingface.co/sentence-transformers/all-mpnet-base-v2
 pip install transformers sentence_transformers fpdf PyPDF2 pytesseract pypdfium2 docxpy gpt4all
 ```
 
+5. After successfully installing pytesseract, you can find the folder containing all the contents of the pytesseract library in the Python installation directory.
 
-Change the following var paths in main.py wrt to your project directory location:
+A common path where you might find the "site-packages" directory:
+
 ```
-extractor_model_dir = "D:\\web dev\\Axis\\jdResume\\keyphrase-extraction-kbir-inspec"
-st_model_dir = "D:\\web dev\\Axis\\jdResume\\bert-base-nli-mean-tokens"
-pytesseract.pytesseract.tesseract_cmd = r"D:\\web dev\\Axis\\jdResume\\tesseract-ocr\\tesseract.exe"
-extractor = pipeline("token-classification", model=extractor_model_dir, tokenizer=extractor_model_dir)
-model = SentenceTransformer(st_model_dir)
-jd="D:\\web dev\\Axis\\job_description_final\\jd.pdf"
+C:\Users\<YourUsername>\AppData\Local\Programs\Python\<PythonVersion>\Lib\site-packages
+```
+Rename the folder containing the pytesseract library contents to "tesseract-ocr" and then copy it into the sub-directory 'RoleFitAI/jdResume' within the project.
+
+6. Change the following var paths in main.py wrt to your project directory location:
+```
+extractor_model_dir = "path-to-dir-RoleFitAI\\jdResume\\keyphrase-extraction-kbir-inspec"
+st_model_dir = "path-to-dir-RoleFitAI\\jdResume\\bert-base-nli-mean-tokens"
+pytesseract.pytesseract.tesseract_cmd = r"path-to-dir-RoleFitAI\\jdResume\\tesseract-ocr\\tesseract.exe"
+jd="path-to-dir-RoleFitAI\\job_description_final\\jd.pdf"
 ```
 
 Change the following var paths in jtjd.py wrt to your project directory location:
